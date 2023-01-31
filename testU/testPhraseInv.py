@@ -1,5 +1,6 @@
 import unittest
-from src.Methode import *
+from src.Methode import PhraseInv
+
 
 class testPhraseInv (unittest.TestCase):
     def test_PhraseInv(self):

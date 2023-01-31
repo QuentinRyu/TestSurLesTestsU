@@ -9,7 +9,7 @@ def main():
 
     phrase1 = PhraseInv(phrase)
 
-    print (palindrome(phrase,phrase1))
+    print (palindrome(phrase,phrase1,"eng"))
 
     return Aurevoir("eng")
 

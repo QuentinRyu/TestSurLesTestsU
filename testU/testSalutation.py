@@ -1,6 +1,7 @@
 import unittest
-from src.Methode import *
+from src.Methode import Saluer
 from datetime import datetime
+from src.langues.Constantes import Constantes
 
 class mainTest(unittest.TestCase):
 
