@@ -32,10 +32,10 @@ def PhraseInv(phrase):
 def palindrome (phrase, phraseInv):
 
     if phrase == phraseInv :
-        felicitation = "Bien Dit !"
+        resultat = "Bien Dit !"
     else:
-        felicitation = "Ce n'est pas un palindrome :("
-    return felicitation
+        resultat = "Ce n'est pas un palindrome :("
+    return resultat
     
 def Aurevoir():
     date = datetime.now()

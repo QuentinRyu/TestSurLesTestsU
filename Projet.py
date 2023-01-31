@@ -1,5 +1,6 @@
-from Methode import *
-from testProjet import *
+from src.Methode import *
+from testU.testProjet import *
+from testU.testPalindrome import *
 def main():
 
     print(Saluer())
