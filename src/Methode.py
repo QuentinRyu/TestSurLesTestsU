@@ -1,14 +1,25 @@
 from datetime import datetime
-def Saluer():
+from src.langues.Constantes import *
+
+def Saluer(langue):
     date = datetime.now()
     heure = date.hour
 
     if heure < 11 :
-        salutation = "Bonne matinée !"
+        if langue == "eng" :
+            salutation = Constantes.Anglais.GOOD_MORNING
+        else:
+            salutation = Constantes.Francais.BONNE_MATINEE
     elif heure <18 :
-        salutation = "Bonjour !"
+        if langue == "eng" :
+            salutation = Constantes.Anglais.HELLO
+        else: 
+            salutation = Constantes.Francais.BONJOUR
     else :
-        salutation = "Bonsoir !"
+        if langue == "eng" :
+            salutation = Constantes.Anglais.GOOD_AFTERNOON
+        else :
+            salutation = Constantes.Francais.BONSOIR
 
     return salutation
 
@@ -29,23 +40,23 @@ def PhraseInv(phrase):
     print(phrase)
     return phrase
 
-def palindrome (phrase, phraseInv):
+def palindrome (phrase, phraseInv, langue):
 
     if phrase == phraseInv :
-        resultat = "Bien Dit !"
+        if langue == "eng" :
+            resultat = Constantes.Anglais.WELL_DONE
+        else :
+            resultat = Constantes.Francais.BIEN_DIT
     else:
-        resultat = "Ce n'est pas un palindrome :("
+        resultat = ":("
     return resultat
-    
-def Aurevoir():
+  
+def Aurevoir(langue):
     date = datetime.now()
     heure = date.hour
 
-    if heure < 11 :
-        print("Passez une bonne matinée !")
-    elif heure <18 :
-        print("Bonne journée !")
-    else :
-        print("Bonne soirée !")
+    if langue == "eng" :
+        print(Constantes.Anglais.GOODBYE)
 
-    return
+    else:
+        print(Constantes.Francais.AU_REVOIR)

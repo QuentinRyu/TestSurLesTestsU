@@ -1,5 +1,4 @@
 import unittest
-from Projet import *
 from src.Methode import *
 
 class testPhraseInv (unittest.TestCase):

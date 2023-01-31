@@ -1,9 +1,8 @@
-from src.Methode import *
-from testU.testProjet import *
-from testU.testPalindrome import *
+from src.Methode import Saluer, PhraseInv, palindrome, Aurevoir
+
 def main():
 
-    print(Saluer())
+    print(Saluer("eng"))
 
     phrase = str(input('dit quelque chose :'))
     print(phrase)
@@ -12,6 +11,6 @@ def main():
 
     print (palindrome(phrase,phrase1))
 
-    return Aurevoir()
+    return Aurevoir("eng")
 
 main()

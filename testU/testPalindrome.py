@@ -1,5 +1,4 @@
 import unittest
-from Projet import *
 from src.Methode import *
 
 class testPalindrome(unittest.TestCase):
@@ -12,6 +11,6 @@ class testPalindrome(unittest.TestCase):
 
     def test_PasPalindrome(self):
         # QUAND on saisie une chaîne
-        resultat = palindrome("kayak","kayak")
+        resultat = palindrome("toto","otot")
         #ALORS celle-ci n'est pas renvoyée en miroir
-        return self.assertEqual("Ce n'est pas un palindrome :(", resultat)
+        return self.assertEqual(":(", resultat)
